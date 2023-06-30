@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToDoList"
+    android:background="@drawable/pride"
+    android:isScrollContainer="false"
+    android:alpha="1">
+
+    <EditText
+        android:id="@+id/task"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:hint="Add your Task"
+
+    />
+
+    <Button
+        android:id="@+id/addTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_toRightOf="@+id/task"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#69F0AE"
+    />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/task"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/checklist_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </ScrollView>
+
+</RelativeLayout>

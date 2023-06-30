@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:background="@drawable/stars"
+    android:alpha="0.8">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To - Do Lists"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:layout_marginTop="80dp"
+    />
+
+    <TextView
+        android:id="@+id/brief"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Best way of Organizing your Tasks."
+        android:layout_below="@+id/title"
+        android:textSize="20sp"
+        android:textAlignment="center"
+    />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/brief"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/stack"
+    />
+
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_below="@+id/brief"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="180dp"
+        android:src="@drawable/pencil_blue_list"
+    />
+
+    <ImageView
+        android:id="@+id/logo3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/brief"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/half_pencil"
+    />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To - Do List, Helping to make List of your Daily Tasks Easier."
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_below="@+id/logo3"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+    />
+
+</RelativeLayout>
